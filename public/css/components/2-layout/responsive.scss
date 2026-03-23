@@ -1,0 +1,155 @@
+// 1450px
+@include xxxxlg-xxxxxlg {
+  // @include hero-xxxxlg-xxxxxlg;
+}
+// 1380px
+@include xxxlg-xxxxlg {
+  @include hero-xxxlg-xxxxlg;
+}
+// 1250px
+@include xlg-xxlg-extra {
+  @include hero-xlg-xxlg-extra;
+}
+// 1180px
+@include xlg-xxlg {
+  .auto__container {
+    padding: 0 30px;
+  }
+  h1 {
+    font-size: 180px;
+  }
+  h2 {
+    font-size: 50px;
+    line-height: 122%;
+  }
+  @include hero-xlg-xxlg;
+  @include about-xlg-xxlg;
+  @include projects-xlg-xxlg;
+  @include experience-xlg-xxlg;
+  @include services-xlg-xxlg;
+  @include testimonials-xlg-xxlg;
+  @include footer-xlg-xxlg;
+}
+// 1024px
+@include lg-xlg {
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  h1 {
+    font-size: 150px;
+    margin-left: -2%;
+  }
+  h2 {
+    font-size: 45px;
+  }
+  body {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  p {
+    &.sm {
+      font-size: 14px;
+      line-height: 17px;
+    }
+  }
+  @include header-lg-xlg;
+  @include nav-lg-xlg;
+  @include hero-lg-xlg;
+  @include about-lg-xlg;
+  @include contact-lg-xlg;
+  @include footer-lg-xlg;
+}
+// 930px
+@include md-lg {
+  h1 {
+    font-size: 120px;
+  }
+  h2 {
+    font-size: 40px;
+  }
+  h5 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .title {
+    h5 {
+      margin-bottom: 16px;
+    }
+  }
+  @include hero-md-lg;
+  @include about-md-lg;
+  @include projects-md-lg;
+  @include experience-md-lg;
+  @include services-md-lg;
+  @include testimonials-md-lg;
+  @include contact-md-lg;
+  @include footer-md-lg;
+}
+// 750px
+@include sm-md {
+  .auto__container {
+    padding: 0 20px;
+  }
+  h1 {
+    font-size: 100px;
+  }
+  h2 {
+    font-size: 35px;
+  }
+
+  body {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  p {
+    &.ex {
+      font-size: 13px;
+      line-height: 17px;
+    }
+  }
+  .input {
+    input,
+    textarea {
+      font-size: 16px;
+      line-height: 24px;
+      padding: 15px 0;
+    }
+  }
+  @include hero-sm-md;
+  @include experience-sm-md;
+  @include testimonials-sm-md;
+  @include contact-sm-md;
+  @include footer-sm-md;
+}
+// 650px
+@include sm-md-extra {
+  @include hero-sm-md-extra;
+  @include about-sm-md-extra;
+  @include experience-sm-md-extra;
+  @include services-sm-md-extra;
+}
+// 540px
+@include xsm-sm {
+  h1 {
+    font-size: 80px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  @include header-xsm-sm;
+  @include nav-xsm-sm;
+  @include hero-xsm-sm;
+  @include projects-xsm-sm;
+  @include services-xsm-sm;
+  @include testimonials-xsm-sm;
+  @include contact-xsm-sm;
+  @include footer-xsm-sm;
+}
+// 440px
+@include xxsm-xsm {
+  @include hero-xxsm-xsm;
+}
+// 390px
+@include xxxsm-xxsm {
+  @include footer-xxxsm-xxsm;
+}

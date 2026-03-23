@@ -1,0 +1,43 @@
+@font-face {
+  font-family: "GT America";
+  src: url("GTAmerica-Thin.eot");
+  src: url("GTAmerica-Thin.eot?#iefix") format("embedded-opentype"),
+    url("GTAmerica-Thin.woff") format("woff"),
+    url("GTAmerica-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GT Flexa";
+  src: url("GTFlexa-Light.eot");
+  src: url("GTFlexa-Light.eot?#iefix") format("embedded-opentype"),
+    url("GTFlexa-Light.woff") format("woff"),
+    url("GTFlexa-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GT Flexa";
+  src: url("GTFlexa-Regular.eot");
+  src: url("GTFlexa-Regular.eot?#iefix") format("embedded-opentype"),
+    url("GTFlexa-Regular.woff") format("woff"),
+    url("GTFlexa-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GT Pressura Mono";
+  src: url("GTPressuraMono-Light.eot");
+  src: url("GTPressuraMono-Light.eot?#iefix") format("embedded-opentype"),
+    url("GTPressuraMono-Light.woff") format("woff"),
+    url("GTPressuraMono-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
