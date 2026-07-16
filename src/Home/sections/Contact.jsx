@@ -20,16 +20,16 @@ export default function Contact() {
               </div>
               <p className="ex">Fill the form or follow on:</p>
               <div className="contact__inner-social">
-                <a href="https://t.me/agabay0102" target="_blank">
+                <a href="https://t.me/agabay0102" target="_blank" rel="noreferrer">
                   {telegram}
                 </a>
-                <a href="https://github.com/ovezgeldiyev" target="_blank">
+                <a href="https://github.com/ovezgeldiyev" target="_blank" rel="noreferrer">
                   {github}
                 </a>
-                <a href="#">{instagram}</a>
+                <a href="/">{instagram}</a>
                 <a
                   href="https://wa.me/99362523126"
-                  target="_blank"
+                  target="_blank" rel="noreferrer"
                   className="mid"
                 >
                   {whatsapp}
@@ -37,7 +37,7 @@ export default function Contact() {
                 <a
                   href="https://www.fiverr.com/s/Eg31VoY"
                   className="big"
-                  target="_blank"
+                  target="_blank" rel="noreferrer"
                 >
                   {fiverr}
                 </a>

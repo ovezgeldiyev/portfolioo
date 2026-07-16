@@ -10,7 +10,7 @@ export default function Footer() {
             <div className="footer__inner-main">
               <div className="footerImage">
                 <img src="/images/about.webp" alt="about" />
-                <a href="https://www.fiverr.com/s/Eg31VoY" target="_blank">
+                <a href="https://www.fiverr.com/s/Eg31VoY" target="_blank" rel="noreferrer">
                   <img src="/images/icons/fiverr.svg" alt="fiverr" />
                 </a>
               </div>
@@ -23,19 +23,19 @@ export default function Footer() {
               </div>
             </div>
             <div className="footer__inner-social">
-              <a href="#">
+              <a href="/">
                 {instagram}
                 Instagram
               </a>
-              <a href="https://t.me/agabay0102" target="_blank">
+              <a href="https://t.me/agabay0102" target="_blank" rel="noreferrer">
                 {telegram}
                 Telegram
               </a>
-              <a href="https://github.com/ovezgeldiyev" target="_blank">
+              <a href="https://github.com/ovezgeldiyev" target="_blank" rel="noreferrer">
                 {github}
                 Github
               </a>
-              <a href="#">
+              <a href="https://wa.me/99362523126" target="_blank" rel="noreferrer">
                 {whatsapp}
                 WhatsApp
               </a>
@@ -63,8 +63,8 @@ export default function Footer() {
               <p className="ex">© 2022</p>
             </div>
             <div className="footer__inner-terms">
-              <a href="#">@agabay</a>
-              <a href="#">Terms</a>
+              <a href="/">@agabay</a>
+              <a href="/">Terms</a>
             </div>
           </div>
         </div>

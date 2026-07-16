@@ -35,7 +35,7 @@ export default function Header() {
     <header className="header" id="header">
       <div className="auto__container">
         <div className="header__inner">
-          <a href="#" className="header__inner-logo">
+          <a href="/" className="header__inner-logo">
             <span>
               <img src="./images/logo.webp" alt="logo" />
             </span>
