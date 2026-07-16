@@ -52,6 +52,7 @@
       align-items: flex-end;
       img {
         width: 100%;
+        filter: grayscale(1);
       }
     }
     &-scroll {
@@ -179,7 +180,7 @@
         margin-bottom: 30px;
       }
       &-title {
-        margin-bottom: 50px;
+        margin-bottom: 30px;
         p {
           font-size: 14px;
         }

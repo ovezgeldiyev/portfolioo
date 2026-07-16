@@ -38,7 +38,7 @@ export default function Hero() {
             </a>
           </div>
           <div className="hero__inner-image">
-            <img src="/images/hero.png" alt="" />
+            <img src="/images/hero.webp" alt="hero" />
           </div>
         </div>
       </div>

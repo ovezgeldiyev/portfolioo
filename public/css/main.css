@@ -743,6 +743,8 @@ p.ex {
 }
 .hero__inner-image img {
   width: 100%;
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
 }
 .hero__inner-scroll {
   display: -webkit-box;
@@ -2189,7 +2191,7 @@ p.ex {
     margin-bottom: 30px;
   }
   .hero__inner-title {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
   .hero__inner-title p {
     font-size: 14px;
