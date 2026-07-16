@@ -9,11 +9,11 @@ export default function About() {
             <div className="about__inner-title">
               <h2>About me</h2>
               <p>
-                Hi, I'm Madilyani a passionate and creative front-end developer
-                with a love for crafting engaging and visually stunning user
-                experiences. With a strong eye for design and a deep
-                understanding of modern web technologies, I bring ideas to life
-                through clean, responsive, and interactive code.
+                Hi, I'm Agabay, a Front-End Developer with over 4 years of
+                experience building responsive, pixel-perfect websites from
+                Figma, PSD, and Adobe XD designs. I enjoy transforming creative
+                ideas into fast, modern, and user-friendly web experiences using
+                clean and maintainable code.
               </p>
             </div>
             <div className="about__inner-arrow">
@@ -24,33 +24,25 @@ export default function About() {
             <div className="aboutCard__icon">
               <img src="/images/icons/earth.svg" alt="" />
             </div>
-            <h2>35%</h2>
+            <h2>300+</h2>
             <p>
-              World domination on Fiverr platform as top rated seller last 4+
-              years.
+              Front-end projects completed, including landing pages, multi-page
+              websites, dashboards, and responsive email templates.
             </p>
             <div className="aboutCard__image">
-              <img src="/images/about.png" alt="" />
+              <img src="/images/about.webp" alt="about" />
             </div>
           </div>
           <div className="about__inner-col">
-            <a href="#" className="aboutLink">
-              <div className="aboutLink__inner">
-                <img src="/images/about.png" alt="" />
-              </div>
-              <span>
-                <img src="/images/icons/arrow-right.svg" alt="" />
-              </span>
-            </a>
             <ul>
               <li>
                 <span>
                   <img src="/images/icons/star-circle.svg" alt="" />
                 </span>
                 <p>
-                  With over 5+ years in web front-end development, I’ve honed my
-                  skills in building responsive, accessible, and visually
-                  captivating websites.
+                  Over 4 years of experience creating responsive, cross-browser,
+                  and pixel-perfect websites with HTML, CSS, JavaScript, React,
+                  TypeScript, and Next.js.
                 </p>
               </li>
               <li>
@@ -58,10 +50,10 @@ export default function About() {
                   <img src="/images/icons/star-circle.svg" alt="" />
                 </span>
                 <p>
-                  As a top-rated seller on Fiverr, I’ve had the privilege of
-                  working with clients from around the world, delivering
-                  high-quality front-end development services that consistently
-                  exceed expectations
+                  Worked on more than 300 real-world frontend projects in
+                  collaboration with experienced developers, delivering clean,
+                  maintainable code with strong attention to detail and design
+                  accuracy.
                 </p>
               </li>
             </ul>

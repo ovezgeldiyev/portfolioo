@@ -1,68 +1,66 @@
 import React from "react";
-import Slider from "react-slick";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, FreeMode } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+import { useEffect, useRef } from "react";
+
 const projectsList = [
   {
     id: "1",
-    image: "/images/projects/1.png",
-    title: "Branda website",
+    image: "/images/projects/draslovka.webp",
+    title: "Draslovka",
     text: "Front end development and website animations",
-    link: "#",
+    link: "https://draslovka.vercel.app/",
   },
   {
     id: "2",
-    image: "/images/projects/2.png",
-    title: "News art agency",
-    text: "front end development and website animations",
-    link: "#",
+    image: "/images/projects/sepex.webp",
+    title: "Sepex website",
+    text: "Front end development and website animations",
+    link: "https://sepex.vercel.app/",
   },
   {
     id: "3",
-    image: "/images/projects/3.png",
-    title: "Kyrotopia LLC",
-    text: "Design and website development",
-    link: "#",
+    image: "/images/projects/yay.webp",
+    title: "Yay website",
+    text: "Front end development and website animations",
+    link: "https://yay-iota-topaz.vercel.app/",
   },
   {
     id: "4",
-    image: "/images/projects/1.png",
-    title: "Branda website",
+    image: "/images/projects/tarre-rites.webp",
+    title: "Tarré & Rites",
     text: "Front end development and website animations",
-    link: "#",
+    link: "https://tarre-rites-seven.vercel.app/",
+  },
+  {
+    id: "5",
+    image: "/images/projects/marrowell.webp",
+    title: "Marrowell",
+    text: "Front end development and website animations",
+    link: "https://marrowell-alpha.vercel.app/",
+  },
+  {
+    id: "6",
+    image: "/images/projects/moddys.webp",
+    title: "Moddy's",
+    text: "Front end development and website animations",
+    link: "https://moddys-self.vercel.app/",
+  },
+  {
+    id: "7",
+    image: "/images/projects/senseLab.webp",
+    title: "SenseLab",
+    text: "Front end development and website animations",
+    link: "https://sense-lab-eight.vercel.app/",
   },
 ];
+
 export default function Projects() {
-  const settings = {
-    dots: false,
-    infinite: false,
-    speed: 500,
-    slidesToShow: 2.3,
-    slidesToScroll: 1,
-    arrows: false,
-    cssEase: "linear",
-    responsive: [
-      {
-        breakpoint: 930,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-        },
-      },
-      {
-        breakpoint: 650,
-        settings: {
-          slidesToShow: 1.5,
-          slidesToScroll: 1,
-        },
-      },
-      {
-        breakpoint: 540,
-        settings: {
-          slidesToShow: 1.1,
-          slidesToScroll: 1,
-        },
-      },
-    ],
-  };
+  const prevRef = useRef(null);
+  const nextRef = useRef(null);
+  const swiperRef = useRef(null);
   return (
     <section className="projects">
       <div className="auto__container">
@@ -72,33 +70,77 @@ export default function Projects() {
               <span style={{ backgroundColor: "#ebc23a" }}></span>
               <b>Portfolio</b>
             </h5>
+
             <h2>
-              Bringing Ideas <br />
+              Bringing Ideas
+              <br />
               to Life
             </h2>
           </div>
-          <Slider {...settings} className="projects__inner-slider">
-            {projectsList.map((item, index) => {
-              return <ProjectsItem {...item} key={index} />;
-            })}
-          </Slider>
+          <div className="projects__inner-wrapper">
+            <Swiper
+              modules={[Navigation]}
+              onSwiper={(swiper) => {
+                swiperRef.current = swiper;
+              }}
+              spaceBetween={20}
+              slidesPerView={3}
+              freeMode={true}
+              navigation={{
+                prevEl: ".swiper-prev",
+                nextEl: ".swiper-next",
+              }}
+              breakpoints={{
+                0: {
+                  slidesPerView: 1,
+                  spaceBetween: 10,
+                },
+                650: {
+                  slidesPerView: 2,
+                },
+                930: {
+                  slidesPerView: 2.5,
+                },
+                1180: {
+                  slidesPerView: 3,
+                },
+              }}
+            >
+              {projectsList.map((item) => (
+                <SwiperSlide key={item.id}>
+                  <ProjectsItem {...item} />
+                </SwiperSlide>
+              ))}
+            </Swiper>
+            <div className="swiper-buttons">
+              <button ref={prevRef} className="swiper-prev">
+                <img src="/images/icons/arrow-right.svg" alt="" />
+              </button>
+              <button ref={nextRef} className="swiper-next">
+                <img src="/images/icons/arrow-right.svg" alt="" />
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </section>
   );
 }
-const ProjectsItem = (props) => {
+
+const ProjectsItem = ({ image, title, text, link }) => {
   return (
-    <a href={props.link} className="projectsItem">
+    <a
+      href={link}
+      className="projectsItem"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
       <div className="projectsItem__image">
-        <img src={props.image} alt="" />
-        <span>
-          <img src="/images/icons/arrow-right.svg" alt="" />
-        </span>
+        <img src={image} alt={title} />
       </div>
       <div className="projectsItem__content">
-        <h5>{props.title}</h5>
-        <p>{props.text}</p>
+        <h5>{title}</h5>
+        <p>{text}</p>
       </div>
     </a>
   );

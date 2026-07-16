@@ -4,11 +4,11 @@
 }
 // 1380px
 @include xxxlg-xxxxlg {
-  @include hero-xxxlg-xxxxlg;
+  // @include hero-xxxlg-xxxxlg;
 }
 // 1250px
 @include xlg-xxlg-extra {
-  @include hero-xlg-xxlg-extra;
+  // @include hero-xlg-xxlg-extra;
 }
 // 1180px
 @include xlg-xxlg {
@@ -123,7 +123,6 @@
 }
 // 650px
 @include sm-md-extra {
-  @include hero-sm-md-extra;
   @include about-sm-md-extra;
   @include experience-sm-md-extra;
   @include services-sm-md-extra;
@@ -147,7 +146,7 @@
 }
 // 440px
 @include xxsm-xsm {
-  @include hero-xxsm-xsm;
+  // @include hero-xxsm-xsm;
 }
 // 390px
 @include xxxsm-xxsm {

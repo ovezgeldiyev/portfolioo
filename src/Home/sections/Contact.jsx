@@ -20,13 +20,25 @@ export default function Contact() {
               </div>
               <p className="ex">Fill the form or follow on:</p>
               <div className="contact__inner-social">
-                <a href="#">{telegram}</a>
-                <a href="#">{github}</a>
+                <a href="https://t.me/agabay0102" target="_blank">
+                  {telegram}
+                </a>
+                <a href="https://github.com/ovezgeldiyev" target="_blank">
+                  {github}
+                </a>
                 <a href="#">{instagram}</a>
-                <a href="#" className="mid">
+                <a
+                  href="https://wa.me/99362523126"
+                  target="_blank"
+                  className="mid"
+                >
                   {whatsapp}
                 </a>
-                <a href="#" className="big">
+                <a
+                  href="https://www.fiverr.com/s/Eg31VoY"
+                  className="big"
+                  target="_blank"
+                >
                   {fiverr}
                 </a>
               </div>

@@ -36,26 +36,25 @@ export default function Header() {
       <div className="auto__container">
         <div className="header__inner">
           <a href="#" className="header__inner-logo">
-            <span></span>
-            <b>D.Madilyani</b>
+            <span>
+              <img src="./images/logo.webp" alt="logo" />
+            </span>
+            <b>A.Ovezgeldiyev</b>
           </a>
           <nav className={"nav " + (menu ? "active" : "")} onClick={close}>
             <div className="nav__inner">
               <ul className="nav__inner-links">
                 <li>
-                  <a href="#">About Me</a>
+                  <a href="#about">About Me</a>
                 </li>
                 <li>
-                  <a href="#">Portfolio</a>
+                  <a href="#projects">Portfolio</a>
                 </li>
                 <li>
-                  <a href="#">Experience</a>
+                  <a href="#experience">Experience</a>
                 </li>
                 <li>
-                  <a href="#">Services</a>
-                </li>
-                <li>
-                  <a href="#">Testimonials</a>
+                  <a href="#services">Services</a>
                 </li>
               </ul>
               <div className="nav__inner-button">

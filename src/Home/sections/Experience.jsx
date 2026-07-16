@@ -12,32 +12,32 @@ export default function Experience() {
                 <span style={{ backgroundColor: "#CF3266" }}></span>
                 Experience
               </h5>
-              <h2>
-                Explore my <br />
-                Journey
-              </h2>
+              <h3>
+                4+ Years of <br />
+                Front-End Development
+              </h3>
             </div>
             <div className="experience__inner-text">
               <p className="sm">
-                As a top-rated seller on Fiverr i had opportunitoes like:
-                building custom websites, optimizing user experiences, or
-                solving complex coding challenges, I take pride in providing
-                solutions that meet both business goals and user needs.
+                Over the past four years, I've contributed to hundreds of
+                real-world frontend projects, transforming Figma, PSD, and Adobe
+                XD designs into responsive, production-ready websites using
+                modern web technologies.
               </p>
-              <div className="experience__inner-link">
-                <b>Book a call</b>
+              <a href="#projects" className="experience__inner-link">
+                <b>View My Projects</b>
                 <span>
                   <img src="/images/icons/arrow-right.svg" alt="" />
                 </span>
-              </div>
+              </a>
             </div>
           </div>
           <div className="experience__inner-content">
             <div className="experienceItem">
               <div className="experienceItem__head active">
                 <div className="experienceItem__title">
-                  <h5>Fiverr freelance</h5>
-                  <p>March 2020 - Present</p>
+                  <h5>Front-End Developer</h5>
+                  <p>June 2022 – Present</p>
                 </div>
                 <div className="experienceItem__head-row">
                   <div className="experienceItem__tag">react</div>
@@ -70,121 +70,21 @@ export default function Experience() {
                 </div>
                 <div className="experienceItem__text">
                   <p>
-                    Top rated seller and more than 800+ projects on the Fiverr
-                    platform as a front end developer, UI UX, browser
-                    compatibility expert. Made fully responsive web pages.
-                    Convert Figma, Photoshop, Adobe XD design into front-end
-                    react app. 99% satisfied clients 31% global dominance on the
-                    Fiverr platform 77% rated orders on the platform 99% repeat
-                    orders
+                    Since 2022, I've been collaborating on commercial frontend
+                    projects for clients from different industries. My primary
+                    responsibility is converting Figma, PSD, and Adobe XD
+                    designs into responsive, pixel-perfect websites and React
+                    applications. I've contributed to more than 300 projects,
+                    including landing pages, multi-page websites, dashboards,
+                    admin panels, and HTML email templates. Every project
+                    focuses on clean code, responsive layouts, cross-browser
+                    compatibility, and attention to detail. Technologies I
+                    regularly work with include HTML, CSS, SCSS, JavaScript,
+                    TypeScript, React, Next.js, Tailwind CSS, Git, and REST
+                    APIs.
                   </p>
                 </div>
-                <a href="#" className="experienceItem__arrow">
-                  {arrowRight}
-                </a>
               </div>
-            </div>
-            <div className="experienceItem">
-              <div className="experienceItem__head">
-                <div className="experienceItem__title">
-                  <h5>TPS Advertising Agency</h5>
-                  <p>April 2019 - April 2020</p>
-                </div>
-                <div className="experienceItem__head-row">
-                  <div className="experienceItem__tag">react</div>
-                  <div className="experienceItem__tag">html</div>
-                  <div className="experienceItem__tag">css</div>
-                  <div className="experienceItem__tag">js</div>
-                  <div className="experienceItem__tag">figma</div>
-                  <button type="button" className="experienceItem__arrow">
-                    {arrowRight}
-                  </button>
-                </div>
-              </div>
-              {/* <div className="experienceItem__body">
-                <div className="experienceItem__row">
-                  <div className="experienceItem__image">
-                    <div className="experienceItem__image-inner">
-                      <img src="/images/experience/1.png" alt="" />
-                    </div>
-                  </div>
-                  <div className="experienceItem__image">
-                    <div className="experienceItem__image-inner">
-                      <img src="/images/experience/2.png" alt="" />
-                    </div>
-                  </div>
-                  <div className="experienceItem__image">
-                    <div className="experienceItem__image-inner">
-                      <img src="/images/experience/3.png" alt="" />
-                    </div>
-                  </div>
-                </div>
-                <div className="experienceItem__text">
-                  <p>
-                    Top rated seller and more than 800+ projects on the Fiverr
-                    platform as a front end developer, UI UX, browser
-                    compatibility expert. Made fully responsive web pages.
-                    Convert Figma, Photoshop, Adobe XD design into front-end
-                    react app. 99% satisfied clients 31% global dominance on the
-                    Fiverr platform 77% rated orders on the platform 99% repeat
-                    orders
-                  </p>
-                </div>
-                <a href="#" className="experienceItem__arrow">
-                  {arrowRight}
-                </a>
-              </div> */}
-            </div>
-            <div className="experienceItem">
-              <div className="experienceItem__head">
-                <div className="experienceItem__title">
-                  <h5>Wisdom Technologies</h5>
-                  <p>September 2017 - April 2019</p>
-                </div>
-                <div className="experienceItem__head-row">
-                  <div className="experienceItem__tag">react</div>
-                  <div className="experienceItem__tag">html</div>
-                  <div className="experienceItem__tag">css</div>
-                  <div className="experienceItem__tag">js</div>
-                  <div className="experienceItem__tag">figma</div>
-                  <button type="button" className="experienceItem__arrow">
-                    {arrowRight}
-                  </button>
-                </div>
-              </div>
-              {/* <div className="experienceItem__body">
-                <div className="experienceItem__row">
-                  <div className="experienceItem__image">
-                    <div className="experienceItem__image-inner">
-                      <img src="/images/experience/1.png" alt="" />
-                    </div>
-                  </div>
-                  <div className="experienceItem__image">
-                    <div className="experienceItem__image-inner">
-                      <img src="/images/experience/2.png" alt="" />
-                    </div>
-                  </div>
-                  <div className="experienceItem__image">
-                    <div className="experienceItem__image-inner">
-                      <img src="/images/experience/3.png" alt="" />
-                    </div>
-                  </div>
-                </div>
-                <div className="experienceItem__text">
-                  <p>
-                    Top rated seller and more than 800+ projects on the Fiverr
-                    platform as a front end developer, UI UX, browser
-                    compatibility expert. Made fully responsive web pages.
-                    Convert Figma, Photoshop, Adobe XD design into front-end
-                    react app. 99% satisfied clients 31% global dominance on the
-                    Fiverr platform 77% rated orders on the platform 99% repeat
-                    orders
-                  </p>
-                </div>
-                <a href="#" className="experienceItem__arrow">
-                  {arrowRight}
-                </a>
-              </div> */}
             </div>
           </div>
         </div>

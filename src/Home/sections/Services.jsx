@@ -11,65 +11,66 @@ export default function Services() {
                 <span style={{ backgroundColor: "#CF3266" }}></span>
                 Services
               </h5>
-              <h2>
-                Build. Design. <br />
-                Optimize.
-              </h2>
+              <h2>Code. Create. Deliver.</h2>
             </div>
             <div className="services__inner-text">
               <p className="sm">
-                As a creative front-end developer, I provide a range of services
-                designed to bring your digital vision to life. From custom
-                website development to seamless user experiences, I specialize
-                in building high-quality, responsive, and engaging websites
-                tailored to meet your unique needs.
+                I specialize in turning Figma, PSD, and Adobe XD designs into
+                fast, responsive, and pixel-perfect websites. Whether you need a
+                landing page, multi-page website, or React application, I build
+                clean, maintainable front-end solutions ready for production.
               </p>
-              <div className="services__inner-link">
-                <b>Book a call</b>
+              <a href="#contact" className="services__inner-link">
+                <b>Let's Work Together</b>
                 <span>
                   <img src="/images/icons/arrow-right.svg" alt="" />
                 </span>
-              </div>
+              </a>
             </div>
           </div>
           <div className="services__inner-row">
             <div className="servicesCard">
               <h5>
                 <span style={{ backgroundColor: "#C65FCF" }}></span>
-                <b>Custom Website Development</b>
+                <b>Figma to HTML & React</b>
               </h5>
+
               <p className="sm">
-                Every project is unique, and I build websites from scratch that
-                reflect your brand’s identity. Using HTML, CSS, JavaScript, and
-                modern frameworks, I create responsive, high-performance
-                websites that work seamlessly across devices.
+                I convert Figma, PSD, and Adobe XD designs into clean,
+                responsive, pixel-perfect websites using modern front-end
+                technologies while preserving every detail of the original
+                design.
               </p>
+
               <ul>
                 <li>
                   <span>
                     <img src="/images/icons/asterisk.svg" alt="" />
                   </span>
                   <p className="sm">
-                    Responsive Design: Websites that adapt beautifully on
-                    mobile, tablet, and desktop.
+                    <b>Pixel Perfect Development:</b> Accurate implementation
+                    that matches your design with attention to spacing,
+                    typography, and layout.
                   </p>
                 </li>
+
                 <li>
                   <span>
                     <img src="/images/icons/asterisk.svg" alt="" />
                   </span>
                   <p className="sm">
-                    Converting figma, photoshop, Adobe XD designs to responsive
-                    websites
+                    <b>Responsive Design:</b> Websites optimized for desktop,
+                    tablet, and mobile devices with smooth user experience.
                   </p>
                 </li>
+
                 <li>
                   <span>
                     <img src="/images/icons/asterisk.svg" alt="" />
                   </span>
                   <p className="sm">
-                    Cross-Browser Compatibility: Ensuring consistent performance
-                    across all browsers.
+                    <b>Modern Technologies:</b> HTML5, CSS3, JavaScript, React,
+                    Next.js, TypeScript and Tailwind CSS.
                   </p>
                 </li>
               </ul>
@@ -79,13 +80,12 @@ export default function Services() {
                 <span
                   style={{ backgroundColor: "rgba(229, 148, 205, 0.8)" }}
                 ></span>
-                <b>UI/UX Design & Prototyping</b>
+                <b>Responsive Web Development</b>
               </h5>
               <p className="sm">
-                I combine aesthetics with usability to design interfaces that
-                are both visually appealing and easy to navigate. My design
-                process focuses on the user, creating intuitive flows that
-                enhance the overall experience.
+                I develop fast, responsive websites with clean architecture,
+                reusable components, and maintainable code suitable for
+                long-term projects.
               </p>
               <ul>
                 <li>
@@ -93,8 +93,8 @@ export default function Services() {
                     <img src="/images/icons/asterisk.svg" alt="" />
                   </span>
                   <p className="sm">
-                    Wireframes & Mockups: Creating blueprints for your website’s
-                    structure and design.
+                    <b>Landing & Multi-page Websites:</b> Professional websites
+                    built from scratch based on your design requirements.
                   </p>
                 </li>
                 <li>
@@ -102,8 +102,9 @@ export default function Services() {
                     <img src="/images/icons/asterisk.svg" alt="" />
                   </span>
                   <p className="sm">
-                    Interactive Prototypes: Developing functional prototypes for
-                    user testing and feedback.
+                    <b>Cross-Browser Compatibility:</b> Consistent appearance
+                    and functionality across Chrome, Firefox, Safari, Edge, and
+                    more.
                   </p>
                 </li>
                 <li>
@@ -111,8 +112,8 @@ export default function Services() {
                     <img src="/images/icons/asterisk.svg" alt="" />
                   </span>
                   <p className="sm">
-                    User-Centered Approach: Designs crafted with the end-user in
-                    mind, ensuring engagement.
+                    <b>Reusable Components:</b> Well-structured HTML, CSS,
+                    React, and Next.js code that is easy to maintain and extend.
                   </p>
                 </li>
               </ul>
@@ -122,11 +123,12 @@ export default function Services() {
                 <span
                   style={{ backgroundColor: "rgba(235, 93, 109, 0.8)" }}
                 ></span>
-                <b>Front-End Development</b>
+                <b>Performance & Code Quality</b>
               </h5>
               <p className="sm">
-                I bring designs to life using the latest front-end technologies.
-                My code is clean, maintainable, and optimized for performance.
+                Every project is built with performance, readability, and
+                scalability in mind, ensuring fast loading websites and clean
+                code for future updates.
               </p>
               <ul>
                 <li>
@@ -134,8 +136,8 @@ export default function Services() {
                     <img src="/images/icons/asterisk.svg" alt="" />
                   </span>
                   <p className="sm">
-                    HTML, CSS, JavaScript: Developing responsive and dynamic
-                    user interfaces.
+                    <b>Semantic HTML & SEO:</b> Proper HTML5 structure that
+                    improves accessibility and search engine optimization.
                   </p>
                 </li>
                 <li>
@@ -143,8 +145,8 @@ export default function Services() {
                     <img src="/images/icons/asterisk.svg" alt="" />
                   </span>
                   <p className="sm">
-                    Framework: Proficient in React and modern, scalable
-                    solutions.
+                    <b>Performance Optimization:</b> Optimized assets, clean
+                    CSS, and efficient JavaScript for faster page loading.
                   </p>
                 </li>
                 <li>
@@ -152,8 +154,8 @@ export default function Services() {
                     <img src="/images/icons/asterisk.svg" alt="" />
                   </span>
                   <p className="sm">
-                    Performance Optimization: Enhancing load times and
-                    performance metrics.
+                    <b>Clean Code:</b> Readable, scalable, and maintainable code
+                    following modern front-end development practices.
                   </p>
                 </li>
               </ul>

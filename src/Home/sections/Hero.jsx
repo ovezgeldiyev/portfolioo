@@ -7,28 +7,28 @@ export default function Hero() {
         <div className="hero__inner">
           <div className="hero__inner-side">
             <p>Create Digitally</p>
-            <p>2024</p>
+            <p>2026</p>
           </div>
           <div className="hero__inner-content">
             <div className="hero__inner-info">
               <div className="heroItem">
                 <div className="heroItem__number">
                   <sup>+</sup>
-                  <b>790</b>
+                  <b>300</b>
                 </div>
                 <p className="sm">Projects completed</p>
               </div>
               <div className="heroItem">
                 <div className="heroItem__number">
                   <sup>+</sup>
-                  <b>20</b>
+                  <b>4</b>
                 </div>
-                <p className="sm">Startup raised</p>
+                <p className="sm">Years of experience</p>
               </div>
             </div>
             <div className="hero__inner-title">
               <h1>Hello</h1>
-              <p>It’s D.madilyani web front end dev. UI/UX expert.</p>
+              <p>It’s A.Ovezgeldiyev web front end dev. UI/UX expert.</p>
             </div>
             <a href="#about" className="hero__inner-scroll">
               <b>Scroll down</b>

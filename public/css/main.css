@@ -158,6 +158,7 @@ p.ex {
 
 .anchor {
   position: relative;
+  top: -110px;
 }
 
 .title h5 {
@@ -299,7 +300,7 @@ p.ex {
   }
 }
 .nav {
-  width: calc(100% - 188px);
+  width: calc(100% - 210px);
 }
 .nav__inner {
   display: -webkit-box;
@@ -555,7 +556,7 @@ p.ex {
   object-fit: cover;
   -o-object-fit: cover;
 }
-.footerImage span {
+.footerImage a {
   position: absolute;
   bottom: 8px;
   right: 10px;
@@ -571,7 +572,10 @@ p.ex {
           align-items: center;
   z-index: 2;
 }
-.footerImage span img {
+.footerImage a:hover {
+  opacity: 0.9;
+}
+.footerImage a img {
   width: 100%;
 }
 .footerTitle {
@@ -979,34 +983,81 @@ p.ex {
 .projects__inner-slider {
   margin: 0 -8px;
 }
-.projects__inner .slick-track {
-  display: -webkit-box !important;
-  display: -ms-flexbox !important;
-  display: flex !important;
-}
-.projects__inner .slick-slide {
-  height: unset !important;
-  margin: 0 8px;
-}
-.projects__inner .slick-list {
+.projects__inner .swiper {
   overflow: visible !important;
+}
+.projects__inner .swiper-buttons button {
+  position: absolute;
+  top: 50%;
+  z-index: 4;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #fff;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.projects__inner .swiper-buttons button:hover {
+  background: #111;
+}
+.projects__inner .swiper-buttons button:hover img {
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
+}
+.projects__inner .swiper-buttons button.swiper-prev {
+  left: -25px;
+}
+.projects__inner .swiper-buttons button.swiper-prev img {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.projects__inner .swiper-buttons button.swiper-next {
+  right: -25px;
+}
+.projects__inner .swiper-buttons button img {
+  width: 36%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  pointer-events: none;
+}
+.projects__inner-wrapper {
+  position: relative;
 }
 .projects__inner .title {
   margin-bottom: 50px;
 }
 .projectsItem {
-  max-width: 530px;
+  border-radius: 8px;
+  overflow: hidden;
+  display: block;
 }
 .projectsItem:hover {
   opacity: 1;
 }
+.projectsItem:hover .projectsItem__image::before {
+  opacity: 0.7;
+}
+.projectsItem:hover img {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
 .projectsItem__image {
   position: relative;
   width: 100%;
-  padding-bottom: 66%;
-  border-radius: 8px;
+  padding-bottom: 64%;
   overflow: hidden;
-  margin-bottom: 20px;
 }
 .projectsItem__image::before {
   pointer-events: none;
@@ -1016,8 +1067,10 @@ p.ex {
   width: 100%;
   height: 100%;
   content: "";
-  background: rgba(133, 122, 122, 0.5);
+  background: #857a7a6d;
   z-index: 1;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 .projectsItem__image > img {
   position: absolute;
@@ -1027,8 +1080,10 @@ p.ex {
   height: 100%;
   object-fit: cover;
   -o-object-fit: cover;
-  -webkit-transition: 0.3s ease;
-  transition: 0.3s ease;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+  -o-object-position: top;
+     object-position: top;
 }
 .projectsItem__image span {
   position: absolute;
@@ -1062,6 +1117,10 @@ p.ex {
   height: 10px;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
+}
+.projectsItem__content {
+  background: #ffffff;
+  padding: 20px;
 }
 .projectsItem h5 {
   margin-bottom: 12px;
@@ -1166,6 +1225,7 @@ p.ex {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin: -5px;
 }
 .experienceItem__title h5 {
   margin-bottom: 12px;
@@ -1179,7 +1239,6 @@ p.ex {
   padding: 8px 13px;
   background-color: #fff;
   border-radius: 6px;
-  margin-right: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1189,6 +1248,7 @@ p.ex {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 5px;
 }
 .experienceItem__arrow {
   width: 40px;
@@ -1230,7 +1290,7 @@ p.ex {
       -ms-flex-pack: justify;
           justify-content: space-between;
   position: relative;
-  padding: 0 40px 24px 0;
+  padding: 0 0 24px 0;
 }
 .experienceItem__body .experienceItem__arrow {
   position: absolute;
@@ -1277,10 +1337,10 @@ p.ex {
 .experienceItem__text {
   width: calc(56% - 10px);
   max-width: 658px;
-  padding: 20px 30px 20px 0;
+  padding: 20px 0 20px 0;
 }
 .experienceItem__text p {
-  line-height: 122%;
+  line-height: 144%;
 }
 
 .services {
@@ -1589,7 +1649,7 @@ p.ex {
     padding: 10px 20px 10px 0;
   }
   .experienceItem__body {
-    padding: 0 40px 18px 0;
+    padding: 0 0 24px 0;
   }
 
   .services {
@@ -1942,6 +2002,16 @@ p.ex {
   .projects__inner .title {
     margin-bottom: 30px;
   }
+  .projects .swiper-buttons button {
+    width: 44px;
+    height: 44px;
+  }
+  .projects .swiper-buttons button.swiper-prev {
+    left: 0;
+  }
+  .projects .swiper-buttons button.swiper-next {
+    right: 0;
+  }
 
   .experience {
     padding: 60px 0;
@@ -1963,13 +2033,10 @@ p.ex {
     padding: 18px 0;
   }
   .experienceItem__text {
-    padding: 0 10px 0 0;
+    padding: 0;
   }
   .experienceItem__text p {
     font-size: 14px;
-  }
-  .experienceItem__body {
-    padding: 0 30px 18px 0;
   }
   .experienceItem__arrow {
     width: 30px;
@@ -2308,9 +2375,15 @@ p.ex {
             align-items: flex-start;
     position: relative;
   }
+  .experienceItem__head-row {
+    margin: -4px;
+  }
   .experienceItem__title {
     width: 100%;
     margin-bottom: 16px;
+  }
+  .experienceItem__tag {
+    margin: 4px;
   }
   .experienceItem__arrow {
     position: absolute;
@@ -2379,9 +2452,6 @@ p.ex {
 
   .projects {
     padding: 35px 0;
-  }
-  .projectsItem__image {
-    margin-bottom: 15px;
   }
   .projectsItem h5 {
     margin-bottom: 5px;
